@@ -9,8 +9,10 @@ app.set('views', path.join(__dirname, 'view'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
+//static files
+
 //routers
-app.use(require('./routers/'));
+app.use(require('./routes/'));
 
 //Listen the Server
 app.listen(app.get('port'), () => {
