@@ -1,0 +1,28 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #EEF4F2;
+}
+
+.cajaContainer {
+    height: 90vh;
+    min-height: 400px;
+}
+
+.cajaContainer .cajaHeader {
+    height: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajaContainer .cajaHeader .cajaImg {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 350px;
+    margin-top: -1%;
+}
+
+.cajaContainer .cajaHeader .cajaImg img {
+    width: 100%;
+}

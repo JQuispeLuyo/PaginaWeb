@@ -10,6 +10,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 //static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 //routers
 app.use(require('./routes/'));
