@@ -6,15 +6,11 @@ const path = require('path');
 //Settings
 app.set('port', 3000);
 app.set('views', path.join(__dirname, 'view'));
+app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 //routers
-app.get('/', (req, res) => {
-    //res.sendFile(path.join(__dirname, '/view/index.html'));
-    res.render('index.ejs', { title: 'first web site' });
-
-    //console.log();
-});
+app.use(require('./routers/'));
 
 //Listen the Server
 app.listen(app.get('port'), () => {
